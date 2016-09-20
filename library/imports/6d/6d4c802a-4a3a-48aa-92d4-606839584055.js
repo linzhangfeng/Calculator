@@ -36,7 +36,9 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {},
-
+    onEventDidBegin: function onEventDidBegin() {
+        console.log("jian ting did begin");
+    },
     //��������
     calculatorResult: function calculatorResult() {
 
@@ -65,9 +67,12 @@ cc.Class({
         var profit = maichuAll2 - mairuALl;
         console.log("mairuPrice,maichuPrice,shuxufei" + mairuPrice, maichuPrice, shuxufei);
         this.lirui.string = profit.toString();
+    },
+    onOpenUrl: function onOpenUrl() {
+        cc.sys.openURL("http://www.linzhangfeng.cn/xingzhuang/index.html");
     }
-});
-// called every frame, uncomment this function to activate update callback
-// update: function (dt) {
+    // called every frame, uncomment this function to activate update callback
+    // update: function (dt) {
 
-// },
+    // },
+});

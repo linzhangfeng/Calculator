@@ -38,7 +38,9 @@ cc.Class({
     onLoad: function () {
 
     },
-
+    onEventDidBegin: function () {
+        console.log("jian ting did begin")
+    },
     //º∆À„¿˚»Û
     calculatorResult: function () {
 
@@ -68,6 +70,9 @@ cc.Class({
         console.log("mairuPrice,maichuPrice,shuxufei"+mairuPrice,maichuPrice,shuxufei)
         this.lirui.string = profit.toString();
     },
+    onOpenUrl:function(){
+        cc.sys.openURL("http://www.linzhangfeng.cn/xingzhuang/index.html");
+    }
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 
